@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".story_details">
+
+    <TextView
+        android:id="@+id/nameOfPreson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="44dp"
+        android:background="@color/primary_light_50"
+        android:text="Alaa Ahmed  30"
+        android:textColor="@color/primary_text"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/details"
+        android:layout_width="363dp"
+        android:layout_height="318dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:background="@color/primary_light_50"
+        android:gravity="center"
+        android:text="بدأت محنتي عندما كنت في سن الـ 29 عاماً، وكان الأمر جنونياً
+آنذاك، كنت أعيش في كاليفورنيا قرب بيركلي وكنت أهوى الأطعمة العضوية قبل أن تشتهر وتصبح على لسان
+الجميع، كما كنت نحيفة ونشيطة جداً، وليس في تاريخ عائلتي إصابة بسرطان الثدي، وبالتالي لم يكن لدي سبب
+يدفعني للشك في أي أمر من هذا القبيل آنذاك، وفي أواخر تسعينيات القرن العشرين، لم يكن الناس يتحدّثون كثيراً
+عن سرطان الثدي، كان يبدو كأمر نادرا جداً ولا يصيب إلاّ البعض، وحتماً لن يصيب امرأة تتبضّع من سوق المزارعين
+وتمارس التمارين الرياضية خمس مرات في الأسبوع، ولا تدخّن ولا تشرب الكحول وما زالت في ريعان شبابها."
+        android:textColor="@color/blue"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameOfPreson" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:background="#ffa726"
+        android:onClick="onSharClick"
+        android:text="  Share"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:padding="8dp"
+        android:drawableLeft="@drawable/ic_share"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.756"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/details" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:onClick="onBackButtonClick"
+        android:src="@drawable/arrow_back_white"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+</android.support.constraint.ConstraintLayout>

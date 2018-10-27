@@ -1,5 +1,6 @@
 package com.example.android.mygarden;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -15,6 +16,8 @@ public class story_list extends AppCompatActivity {
     }
 
     public void onStoryCliced(View view) {
+        Intent intent = new Intent(story_list.this, story_details.class);
+        startActivity(intent);
     }
 
 

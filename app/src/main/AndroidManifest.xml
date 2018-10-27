@@ -46,10 +46,10 @@
         <activity android:name=".videosa_and_stories" />
         <activity android:name=".video_list" />
         <activity android:name=".story_list" />
-        <activity android:name=".patient_facilities"
-            android:label="Patient Facilities"
-            ></activity>
-
+        <activity
+            android:name=".patient_facilities"
+            android:label="Patient Facilities" />
+        <activity android:name=".story_details"></activity>
     </application>
 
 </manifest>
