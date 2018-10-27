@@ -8,16 +8,16 @@ import android.widget.TextView;
 
 public class story_details extends AppCompatActivity {
 
-    TextView details , nameOfPreson ;
+    TextView details, nameOfPreson;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_story_details);
-        details = (TextView)findViewById(R.id.details);
-        nameOfPreson = (TextView)findViewById(R.id.nameOfPreson);
+        details = (TextView) findViewById(R.id.details);
+        nameOfPreson = (TextView) findViewById(R.id.nameOfPreson);
 
     }
-
 
     public void onBackButtonClick(View view) {
         finish();

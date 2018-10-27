@@ -34,6 +34,7 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.android.mygarden.R;
+import com.example.android.mygarden.activity_message_list;
 import com.example.android.mygarden.patient_facilities;
 import com.example.android.mygarden.videosa_and_stories;
 
@@ -110,8 +111,8 @@ public class MainActivity
                 Toast.makeText(this, "messages is cliked", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.chat:
-                Toast.makeText(this, "chat is cliked", Toast.LENGTH_SHORT).show();
-                break;
+                Intent intentchat = new Intent(MainActivity.this, activity_message_list.class);
+                startActivity(intentchat);                 break;
             case R.id.posts:
                 Toast.makeText(this, "posts is cliked", Toast.LENGTH_SHORT).show();
                 break;
